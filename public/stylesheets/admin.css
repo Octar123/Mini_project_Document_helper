@@ -1,0 +1,156 @@
+       /* Base Styles */
+       body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Header Animation */
+    h1 {
+        color: #2c3e50;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        animation: fadeInDown 0.8s ease;
+    }
+
+    h2 {
+        color: #7f8c8d;
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        animation: fadeIn 1.2s ease;
+    }
+
+    /* Action Container */
+    #edit {
+        display: flex;
+        gap: 1.5rem;
+        animation: fadeInUp 1s ease;
+    }
+
+    /* Action Buttons */
+    .action-btn {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #2c3e50;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .action-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #3498db;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .action-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .action-btn:hover::before {
+        transform: scaleX(1);
+    }
+
+    .action-btn p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+        transition: color 0.3s ease;
+    }
+
+    .action-btn:hover p {
+        color: #3498db;
+    }
+
+    .action-btn .icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .action-btn:hover .icon {
+        transform: scale(1.1);
+    }
+
+    /* Button-specific colors */
+    #add-btn::before {
+        background: #2ecc71;
+    }
+
+    #add-btn:hover p {
+        color: #2ecc71;
+    }
+
+    #delete-btn::before {
+        background: #e74c3c;
+    }
+
+    #delete-btn:hover p {
+        color: #e74c3c;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        #edit {
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.1rem;
+        }
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/add.css">
+</head>
+<body>
+<div class="admin-container">
+    <a href="/admin" class="go-back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Back to Dashboard
+    </a>
+    <h1 class="page-title">Add New Services</h1>
+
+    <h2>To add individual document Click on Respective Services</h2>
+    <h3>Services Available: </h3>
+    <ol>
+    <% Object.entries(data).forEach(function([key, value]) { %>
+            <% for(let i=0; i < value.service.length; i++){ %>
+                <li>
+                <div class="service">
+                    <a href="/admin/add/<%= value.service[i] %>">
+                    <p><%= value.service[i] %></p>
+                    </a>
+                </div>
+                </li>
+            <% } %>
+    <% }) %>
+    </ol>
+
+    <h3 onclick="display()">To add New Service:</h3>
+    <form action="/admin/add" method="post" enctype="multipart/form-data" autocomplete="off">
+    <div class="form-wrapper">
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="newService">Name</label>
+                <input type="text" id="newService" name="newService" placeholder="Enter new Service" required>
+            </div> 
+        </div>
+        <button type="submit" class="submit-btn">
+            <span>Submit</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+            </svg>
+        </button>
+    </div>   
+    </form>
+        
+    <a href="/home" class="go-back-btn" style="margin-top: 20px;">
+        Click Here To Goto Website
+    </a>
+</div>
+</body>
+
+</html>

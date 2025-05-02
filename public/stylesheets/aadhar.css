@@ -1,0 +1,283 @@
+/* Base Styles */
+:root {
+    --primary-color: #1385e0;
+    --secondary-color: #0f6fc5;
+    --accent-color: #ff9933;
+    --light-bg: #f5f9ff;
+    --dark-text: #333;
+    --medium-text: #555;
+    --light-text: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.doc-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.doc-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.doc-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.doc-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.doc-meta {
+    flex: 1;
+}
+
+.doc-meta p {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.doc-meta strong {
+    color: var(--primary-color);
+}
+
+/* Process Steps */
+.application-process {
+    margin: 3rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.step-number {
+    background-color: var(--accent-color);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.step-content {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1;
+    border-left: 4px solid var(--accent-color);
+}
+
+.step-content h3 {
+    margin-bottom: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.step-content ul {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.step-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Video Section */
+.video-guide {
+    margin: 3rem 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-caption {
+    text-align: center;
+    font-style: italic;
+    color: var(--medium-text);
+}
+
+/* Notes Section */
+.important-notes {
+    margin: 3rem 0;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.note-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--accent-color);
+}
+
+.note-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* FAQ Section*/
+.faq-section {
+    margin: 3rem 0;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--accent-color);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.doc-footer {
+    background-color: #f0f4f8;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.doc-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-top: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .doc-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .step {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .step-content {
+        border-left: none;
+        border-top: 4px solid var(--accent-color);
+    }
+}
+
+@media (max-width: 480px) {
+    .doc-header h1 {
+        font-size: 2rem;
+    }
+    
+    .doc-header p {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

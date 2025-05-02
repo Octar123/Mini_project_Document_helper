@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Card Application Process | DocAssist</title>
+    <link rel="stylesheet" href="/stylesheets/aadhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <div class="container">
+            <h1>Aadhaar Card Documentation</h1>
+            <p>India's Unique Identification System</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="doc-overview">
+            <div class="card">
+                <img src="/images/<%= data.image_data %>" alt="Aadhaar Logo" class="doc-logo">
+                <div class="doc-meta">
+                    <p><strong>Issuing Authority:</strong> Unique Identification Authority of India (UIDAI)</p>
+                    <p><strong>Purpose:</strong> Proof of identity and address</p>
+                    <p><strong>Validity:</strong> Lifetime</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Application Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Locate Enrollment Center</h3>
+                        <p>Find your nearest Aadhaar Enrollment Center using the <a href="https://appointments.uidai.gov.in/easearch.aspx" target="_blank">UIDAI center locator</a> or walk into any permanent enrollment center.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Required Documents</h3>
+                        <p>Carry original documents for verification:</p>
+                        <ul>
+                            <li><strong>Proof of Identity:</strong> PAN card, Passport, Ration Card, etc.</li>
+                            <li><strong>Proof of Address:</strong> Voter ID, Utility bills, Bank statement, etc.</li>
+                            <li><strong>Proof of Date of Birth:</strong> Birth certificate, SSLC certificate, etc.</li>
+                        </ul>
+                        <p><a href="https://uidai.gov.in/images/commdoc/valid_documents_list.pdf" target="_blank">View complete document list</a></p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Fill Enrollment Form</h3>
+                        <p>Complete the enrollment form available at the center or download it beforehand from the <a href="https://uidai.gov.in/" target="_blank">UIDAI website</a>.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Biometric Data Collection</h3>
+                        <p>Provide your biometric information:</p>
+                        <ul>
+                            <li>Fingerprints (all 10 fingers)</li>
+                            <li>Iris scan (both eyes)</li>
+                            <li>Photograph</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Receive Acknowledgement Slip</h3>
+                        <p>After successful enrollment, you'll receive an acknowledgment slip containing:</p>
+                        <ul>
+                            <li>Enrollment ID (14-digit number)</li>
+                            <li>Date and time of enrollment</li>
+                            <li>Enrollment center details</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Receive Aadhaar Card</h3>
+                        <p>Your Aadhaar card will be delivered to your registered address within 60-90 days. You can also:</p>
+                        <ul>
+                            <li>Download e-Aadhaar from <a href="https://eaadhaar.uidai.gov.in/" target="_blank">UIDAI website</a> using your enrollment ID</li>
+                            <li>Check status at <a href="https://resident.uidai.gov.in/check-aadhaar-status" target="_blank">resident.uidai.gov.in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guide">
+            <h2><i class="fas fa-video"></i> Official Tutorial Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ld-aM5DPVj8" title="Aadhaar Enrollment Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Official Aadhaar enrollment process video by UIDAI</p>
+        </section>
+
+        <section class="important-notes">
+            <h2><i class="fas fa-exclamation-circle"></i> Important Information</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3><i class="fas fa-rupee-sign"></i> Fees</h3>
+                    <p>First-time enrollment is completely free. Charges apply only for updates/corrections.</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-child"></i> For Children</h3>
+                    <p>Baal Aadhaar (blue colored) is issued for children below 5 years (biometrics update required at age 5 and 15).</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-sync-alt"></i> Updates</h3>
+                    <p>You can update your details online or at enrollment centers. Charges: ₹50 (online) or ₹100 (center).</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-phone-alt"></i> Helpline</h3>
+                    <p>UIDAI Toll-free number: <strong>1947</strong><br>
+                    Email: <a href="mailto:help@uidai.gov.in">help@uidai.gov.in</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3> What is Aadhaar and why is it important?</h3>
+                <p>Aadhaar is a 12-digit unique identity number issued by UIDAI to Indian residents. It serves as proof of identity and address, and is used for various government and financial services.</p>
+            </div>
+            <div class="faq-item">
+                <h3> How can I apply for an Aadhaar card?</h3>
+                <p>You can apply by visiting an official Aadhaar Enrollment Center. The process includes:
+                    Filling out a form,
+                    Submitting identity and address proof,
+                    Biometric capture (fingerprints, iris scan, and photo).</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there any age limit for applying for Aadhaar?</h3>
+                <p>No. Aadhaar can be obtained by any resident of India, including newborns and children.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="doc-footer">
+        <div class="container">
+            <p>For latest updates, always refer to the official <a href="https://uidai.gov.in/" target="_blank">UIDAI website</a></p>
+            <p class="disclaimer">This information is provided for guidance only. DocAssist is not affiliated with UIDAI.</p>
+        </div>
+    </footer>
+</body>
+</html>

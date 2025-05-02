@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving License Application Process | DocAssist</title>
+    <link rel="stylesheet" href="/stylesheets/aadhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <div class="container">
+            <h1>Driving License Documentation</h1>
+            <p>Issued by the Regional Transport Office (RTO) in India</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="doc-overview">
+            <div class="card">
+                <img src="/images/<%= data.image_data %>" alt="Driving License Logo" class="doc-logo">
+                <div class="doc-meta">
+                    <p><strong>Issuing Authority:</strong> Ministry of Road Transport and Highways (MoRTH)</p>
+                    <p><strong>Purpose:</strong> Legal authorization to drive vehicles</p>
+                    <p><strong>Validity:</strong> 20 years or until age 50 (whichever is earlier)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Application Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Apply for Learner’s License</h3>
+                        <p>Visit <a href="https://parivahan.gov.in/" target="_blank">Parivahan portal</a> and select your state. Choose "Apply for Learner License" and fill in the required details.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Upload Documents</h3>
+                        <p>Submit the following documents online or at the RTO:</p>
+                        <ul>
+                            <li><strong>Proof of Age:</strong> Birth Certificate, Aadhaar, 10th certificate, etc.</li>
+                            <li><strong>Proof of Address:</strong> Voter ID, Aadhaar, Passport, Utility bill, etc.</li>
+                            <li><strong>Passport-size photographs</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Schedule Learner’s Test</h3>
+                        <p>Book a slot for the learner’s license test. The test includes basic traffic rules and signs.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Appear for Learner’s Test</h3>
+                        <p>Take the online/computer-based learner’s test at your RTO. If you pass, a Learner's License will be issued valid for 6 months.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Apply for Driving License</h3>
+                        <p>After holding a Learner’s License for at least 30 days, visit the <a href="https://sarathi.parivahan.gov.in/" target="_blank">Sarathi portal</a> and apply for the Driving License.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Book Driving Test</h3>
+                        <p>Choose your preferred RTO and schedule a slot for the driving test. Bring your own vehicle or use one provided by a driving school.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Appear for Driving Test</h3>
+                        <p>Clear the driving skill test. Upon successful completion, the RTO will issue your Driving License, either physically or digitally via DigiLocker.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guide">
+            <h2><i class="fas fa-video"></i> Driving License Application Guide</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lqOszpeodqA" title="How to Apply for Driving License in India" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Complete driving license process explained step by step</p>
+        </section>
+
+        <section class="important-notes">
+            <h2><i class="fas fa-exclamation-circle"></i> Important Information</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3><i class="fas fa-rupee-sign"></i> Application Fees</h3>
+                    <p>Fees range between ₹200 to ₹500 depending on your state and type of license (2-wheeler, LMV, commercial).</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-child"></i> Minimum Age</h3>
+                    <p>16 years for gearless 2-wheelers, 18 years for LMVs (non-transport), 20 years for commercial licenses.</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-sync-alt"></i> Renewal & Updates</h3>
+                    <p>DL renewal required every 20 years or after age 50. Address or class change also possible via Sarathi portal.</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-phone-alt"></i> Support</h3>
+                    <p>MoRTH Helpline: <strong>1800 11 1515</strong><br>
+                    Email: <a href="mailto:support@sarathi.nic.in">support@sarathi.nic.in</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I apply for driving license online?</h3>
+                <p>Yes, through <a href="https://parivahan.gov.in/" target="_blank">parivahan.gov.in</a> portal. However, physical tests at RTO are mandatory.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if I fail the driving test?</h3>
+                <p>You can reappear after 7 days. Maximum 3 attempts allowed within LL validity period.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is learner's license mandatory?</h3>
+                <p>Yes, minimum 30 days of learner's license is compulsory before permanent license test.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I drive in other states with my license?</h3>
+                <p>Yes, driving license issued by any Indian RTO is valid throughout India.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="doc-footer">
+        <div class="container">
+            <p>Always refer to the official <a href="https://parivahan.gov.in/" target="_blank">Parivahan portal</a> for the latest updates.</p>
+            <p class="disclaimer">This information is for guidance purposes. DocAssist is not affiliated with the Ministry of Road Transport and Highways.</p>
+        </div>
+    </footer>
+</body>
+</html>

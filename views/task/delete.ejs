@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/add.css">
+</head>
+<body style="background: #dce3fb;" >
+<div class="admin-container">
+    <a href="/admin" class="go-back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Back to Dashboard
+    </a>
+    <h1 class="page-title">Delete Services</h1>
+
+    <h2>To Delete individual document in a Service Click on Respective Services</h2>
+    <h3>Services Available: </h3>
+        <ol>
+        <% Object.entries(data).forEach(function([key, value]) { %>
+                <% for(let i=0; i < value.service.length; i++){ %>
+                    <li>
+                    <div class="service">
+                        <a href="/admin/delete/<%= value.service[i] %>">
+                        <p><%= value.service[i] %></p>
+                        </a>
+                    </div>
+                    </li>
+                <% } %>
+        <% }) %>
+        </ol>
+
+        <a href="/home" class="go-back-btn" style="margin-top: 20px;">
+            Click Here To Goto Website
+        </a>
+</div>
+</body>
+</html>

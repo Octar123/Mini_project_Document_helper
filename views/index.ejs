@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentEase - Simplify Your Docs</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">DocumentEase</div>
+    <nav class="nav-links">
+      <a href="/home">Home</a>
+      <a href="/common">Common Services</a>
+      <a href="/student">Student</a>
+      <a href="/farmer">Farmer</a>
+      <a href="/rto">RTO</a>
+      <a href="<%= loggedIn ? '/logout' : '/login' %>" id="login">
+        <%= loggedIn ? 'Logout' : 'Login' %>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Get Your Documents with Ease</h1>
+    <p>Your one-stop guide for applying Aadhaar, PAN, Driving License, Ration Card, and more.</p>
+  </section>
+
+  <!-- Search Bar -->
+  <section class="search-section" >
+    <form id="searchbar" method="post" action="/search">
+      <input type="text" id="search" placeholder="Search for a document..." name="search"/>
+     
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+    <div style="background-color: black; height: 20vh; width: 70%; margin: 0 auto 0 auto; display: none;">
+  
+    </div>
+  </section>
+  <!-- Slogan Section -->
+  <section class="slogan">
+    <p>Helping you save time and skip the confusion.</p>
+  </section>
+
+  <!-- Services / Blocks -->
+  <main class="services-grid">
+    <!-- <div class="service-card">Aadhaar Card Application</div> -->
+    <a class="service-card" href="/common/Aadhar Card">Aadhaar Card Application</a>
+    <a class="service-card" href="/common/Pan Card">PAN Card Application</a>
+    <a class="service-card" href="/common/DRIVING LICENSE">Driving License Process</a>
+    <a class="service-card" href="/common/Voter Id">Voter ID Application</a>
+    <a class="service-card" href="/common/Domicile Certificate">Domicile Certificate</a>
+    <a class="service-card" href="">Caste Certificate</a>
+    <a class="service-card" href="">10th Marksheet</a>
+    <a class="service-card" href="">Ration Card Process</a>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>About</h3>
+        <p>DocumentEase helps people find step-by-step processes for getting essential certified documents in India.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="/home">Home</a>
+        <a href="/common">Services</a>
+        <a href="/education">Student Section</a>
+        <a href="/farmer">Farmer Section</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: support@documentease.in</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 DocumentEase. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+<script>
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const loginLink = document.getElementById("login");
+  //   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+
+  //   if (isLoggedIn) {
+  //     loginLink.textContent = "Logout";
+  //     loginLink.href = "/logout"; // or wherever your logout route is
+  //   } else {
+  //     loginLink.textContent = "Login";
+  //     loginLink.href = "/login";
+  //   }
+  // });
+</script>
+</html>
+ 

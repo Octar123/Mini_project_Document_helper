@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentEase - Simplify Your Docs</title>
+  <link rel="stylesheet" href="/stylesheets/common.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">DocumentEase</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/common">Common Services</a>
+      <a href="/student">Student</a>
+      <a href="/farmer">Farmer</a>
+      <a href="/rto">RTO</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Essential Document Services</h1>
+    <p>Streamlined processes for obtaining crucial government-issued documents with confidence and ease</p>
+  </section>
+
+    <% Object.entries(data).forEach(function([key, value]) { %>
+        <section class="doc-info-section">
+            <div class="doc-info-container">
+              <img src="images/<%= value.image_data %>" class="doc-info-bg" alt="<%= value.document %>">
+              <div class="doc-info-content">
+                <h2 class="doc-info-header"><%= value.document %></h2>
+                <div class="doc-info-hidden">
+                  <div class="doc-info-summary">
+                    <ul>
+                        <li><%= value.info1 %></li>
+                        <li><%= value.info2 %></li>
+                        <li><%= value.info3 %></li>
+                        <li><%= value.info4 %></li>
+                    </ul>
+                  </div>
+                  <a href="common/<%= value.document %>" class="doc-info-button">
+                    View Full Details
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        <% }) %>
+
+        <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>About</h3>
+        <p>DocumentEase helps people find step-by-step processes for getting essential certified documents in India.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="/">Home</a>
+        <a href="/common">Services</a>
+        <a href="/student">Student Section</a>
+        <a href="/farmer">Farmer Section</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: support@documentease.in</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 DocumentEase. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

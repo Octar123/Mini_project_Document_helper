@@ -1,0 +1,130 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; /* Reduced container width */
+}
+
+/* Form Containers */
+.form-container {
+  background: white;
+  padding: 1.8em; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: #2c3e50;
+  margin-bottom: 1.2em; /* Reduced spacing */
+  font-size: 1.5em; /* Smaller heading */
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 1.2em; /* Tighter spacing */
+}
+
+.input-group label {
+  display: block;
+  color: #34495e;
+  margin-bottom: 0.4em;
+  font-size: 0.95em; /* Slightly smaller labels */
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.7em; /* Reduced padding */
+  border: 2px solid #dfe6e9;
+  border-radius: 5px;
+  font-size: 0.95em;
+  background-color: #fff; /* Fix select background */
+}
+
+/* Improved Select Dropdowns */
+.input-group select {
+  appearance: none;
+  padding-right: 30px; /* Space for dropdown arrow */
+  background: url("data:image/svg+xml;utf8,<svg fill='%237f8c8d' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") 
+  no-repeat right 0.8em center/12px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 1em;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #2980b9;
+  transform: scale(1.02);
+}
+
+
+/* Links */
+p {
+  text-align: center;
+  margin-top: 1.5em;
+  color: #7f8c8d;
+}
+
+p a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Animations & Active State */
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .form-container {
+      padding: 1.2em;
+  }
+  
+  .input-group input,
+  .input-group select {
+      padding: 0.6em;
+  }
+}

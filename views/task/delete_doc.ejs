@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Helper</title>
+    <link rel="stylesheet" href="/stylesheets/add.css">
+</head>
+<body>
+<div class="admin-container">
+    <a href="/admin" class="go-back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Back to Dashboard
+    </a>
+    <h1 class="page-title">Delete Documnets in <%= data[0].service_name %></h1>
+    <h2>To Delete Documents Click On It</h2>
+    <ol>
+    <div>
+        <% Object.entries(data).forEach(function([key, value]) { %>
+
+                <li>
+                <div class="service">
+                    <a href="/admin/delete/<%= value.service_name %>" onclick="displayForm('<%= value.document %>')">
+                    <p id="<%= value.document %>"><%= value.document %></p>
+                    </a>
+                </div>
+                </li>
+    <% }) %>
+    </div>
+    </ol>
+</div>
+</body>
+<script>
+
+    
+    function displayForm(value){
+        let valid = prompt("Please Enter the Document name to Confirm Delete")
+        if(valid != null && valid == value){
+            fetch('/deletedoc', {
+                method: 'POST',
+                headers:{
+                    'Content-Type' : 'application/json'
+                },
+                body:JSON.stringify({doc: value})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success){
+                    alert("Document has been deleted Succesfully")
+                    document.getElementById(value).parentElement.remove();
+                    
+                }
+                else{
+                    alert("Failed to Delete Document");
+                }
+            })
+            
+        }
+        else{
+            alert("The document name entered in Incorrect")
+        }
+    }
+    // function dispFormForService(value){
+    //     let valid = prompt("Please Enter the Service name to Confirm Delete")
+    //     if(valid != null && valid == value){
+    //         fetch('/deleteser', {
+    //             method: 'POST',
+    //             headers:{
+    //                 'Content-Type' : 'application/json'
+    //             },
+    //             body:JSON.stringify({doc: value})
+    //         })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             if(data.success){
+    //                 alert("Document has been deleted Succesfully")
+    //             }
+    //             else{
+    //                 alert("Failed to Delete Document");
+    //             }
+    //         })
+            
+    //     }
+    //     else{
+    //         alert("The document name entered in Incorrect")
+    //     }
+    // }
+    
+</script>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter ID Application Process | DocAssist</title>
+    <link rel="stylesheet" href="/stylesheets/aadhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <div class="container">
+            <h1>Voter ID Documentation</h1>
+            <p>Electoral Photo Identity Card (EPIC) - Election Commission of India</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="doc-overview">
+            <div class="card">
+                <img src="/images/<%= data.image_data %>" alt="Voter ID Sample" class="doc-logo">
+                <div class="doc-meta">
+                    <p><strong>Issuing Authority:</strong> Election Commission of India</p>
+                    <p><strong>Purpose:</strong> Voting in elections and identity proof</p>
+                    <p><strong>Validity:</strong> Lifetime (requires periodic updates)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Application Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Check Eligibility</h3>
+                        <p>Basic requirements:</p>
+                        <ul>
+                            <li>Must be Indian citizen</li>
+                            <li>Minimum age: 18 years (as on qualifying date)</li>
+                            <li>Ordinary resident of the constituency</li>
+                            <li>Not disqualified to vote under any law</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Gather Required Documents</h3>
+                        <p>Prepare the following:</p>
+                        <ul>
+                            <li><strong>Proof of Age:</strong> Birth certificate, 10th marksheet, PAN card</li>
+                            <li><strong>Proof of Address:</strong> Aadhaar, Passport, Utility bills (last 6 months)</li>
+                            <li><strong>Passport-size photo:</strong> Recent white background photo</li>
+                            <li><strong>Additional Documents:</strong> For NRI/Service voters (if applicable)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Fill Application Form</h3>
+                        <p>Options to apply:</p>
+                        <ul>
+                            <li><strong>Online:</strong> Through National Voters' Service Portal (<a href="https://www.nvsp.in/" target="_blank">nvsp.in</a>)</li>
+                            <li><strong>Offline:</strong> Form 6 from Electoral Registration Officer (ERO)</li>
+                            <li>Provide accurate personal and address details</li>
+                            <li>Mention family member's EPIC number (if available)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Submission methods:</p>
+                        <ul>
+                            <li><strong>Online:</strong> Upload documents and submit digitally</li>
+                            <li><strong>Offline:</strong> Submit to Booth Level Officer (BLO) or ERO office</li>
+                            <li><strong>Booth Camp:</strong> Special camps organized before elections</li>
+                            <li>No application fee required</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Verification Process</h3>
+                        <p>After submission:</p>
+                        <ul>
+                            <li>BLO will visit your address for verification</li>
+                            <li>Documents will be physically verified</li>
+                            <li>Your name will be displayed locally for objections (if any)</li>
+                            <li>Process takes 15-30 days typically</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Receive Voter ID</h3>
+                        <p>After successful verification:</p>
+                        <ul>
+                            <li>EPIC card dispatched by post to your address</li>
+                            <li>Digital version available on <a href="https://www.voterportal.eci.gov.in/" target="_blank">Voter Portal</a></li>
+                            <li>Check status using reference number</li>
+                            <li>Total processing time: 30-45 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guide">
+            <h2><i class="fas fa-video"></i> Official Tutorial Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K1e7cppe2xE" title="Voter ID Application Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Official voter ID application tutorial by Election Commission</p>
+        </section>
+
+        <section class="important-notes">
+            <h2><i class="fas fa-exclamation-circle"></i> Important Information</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3><i class="fas fa-calendar-check"></i> Qualifying Dates</h3>
+                    <p>1st January, 1st April, 1st July, 1st October<br>
+                    Must be 18+ on these dates to apply</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-user-edit"></i> Corrections</h3>
+                    <p>Form 8 for corrections<br>
+                    Form 8A for constituency change<br>
+                    Submit within prescribed time</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-users"></i> Special Cases</h3>
+                    <p>NRIs: Form 6A<br>
+                    Service Voters: Form 2<br>
+                    Overseas Voters: Special provisions</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-phone-alt"></i> Helpline</h3>
+                    <p>National Voter Helpline: <strong>1950</strong><br>
+                    SMS: <code>ECI&lt;space&gt;EPIC number</code> to 1950<br>
+                    Email: <a href="mailto:helpdesk@eci.gov.in">helpdesk@eci.gov.in</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I apply for voter ID if I live in a rented house?</h3>
+                <p>Yes, with rental agreement and landlord's NOC. You'll need additional address proof like utility bills in your name.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How to check my name in voter list?</h3>
+                <p>Visit <a href="https://electoralsearch.in/" target="_blank">electoralsearch.in</a> and search by EPIC number or personal details.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if my voter ID is lost?</h3>
+                <p>Apply for duplicate EPIC by submitting Form EPIC-002 at your local ERO office with affidavit and FIR (if required).</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is Aadhaar mandatory for voter ID?</h3>
+                <p>No, but linking Aadhaar with voter ID is encouraged to prevent duplicate entries.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="doc-footer">
+        <div class="container">
+            <p>For online application, visit <a href="https://www.nvsp.in/" target="_blank">National Voters' Service Portal</a></p>
+            <p class="disclaimer">This information is provided for guidance only. DocAssist is not affiliated with Election Commission.</p>
+        </div>
+    </footer>
+</body>
+</html>

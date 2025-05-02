@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Certificate Application Process | DocAssist</title>
+    <link rel="stylesheet" href="/stylesheets/aadhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <div class="container">
+            <h1>Birth Certificate Documentation</h1>
+            <p>Official Record of Birth - Municipal Corporation/Registrar</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="doc-overview">
+            <div class="card">
+                <img src="/images/<%= data.image_data %>" alt="Birth Certificate Sample" class="doc-logo">
+                <div class="doc-meta">
+                    <p><strong>Issuing Authority:</strong> Municipal Corporation/Registrar of Births & Deaths</p>
+                    <p><strong>Purpose:</strong> Legal proof of birth, school admission, passport application</p>
+                    <p><strong>Validity:</strong> Lifetime</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Application Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Determine Where to Apply</h3>
+                        <p>Apply at:</p>
+                        <ul>
+                            <li>Municipal Corporation office where birth occurred</li>
+                            <li>Online portal of your state government (e.g., <a href="https://crsorgi.gov.in/" target="_blank">crsorgi.gov.in</a> for national portal)</li>
+                            <li>Authorized hospitals for recent births (within 21 days)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Required Documents</h3>
+                        <p>Prepare original + photocopies of:</p>
+                        <ul>
+                            <li><strong>Hospital Birth Report</strong> (for institutional births)</li>
+                            <li><strong>Affidavit</strong> (for home births, attested by notary)</li>
+                            <li>Parents' identity proof (Aadhaar, Voter ID, etc.)</li>
+                            <li>Marriage certificate of parents (if available)</li>
+                            <li>Address proof (Utility bill, Ration card, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Fill Application Form</h3>
+                        <p>Complete Form 1 (for births within 21 days) or Form 2 (for delayed registration):</p>
+                        <ul>
+                            <li>Child's name (can be added later if not decided)</li>
+                            <li>Date, time and place of birth</li>
+                            <li>Parents' details (names, ages, address)</li>
+                            <li>Informant details (usually parent or hospital authority)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Submission methods:</p>
+                        <ul>
+                            <li><strong>In-person:</strong> At municipal office or hospital</li>
+                            <li><strong>Online:</strong> Through state portal with scanned documents</li>
+                            <li>Pay applicable fees (varies by state and delay period)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Verification Process</h3>
+                        <p>Authorities will:</p>
+                        <ul>
+                            <li>Verify submitted documents</li>
+                            <li>Cross-check with hospital records (if applicable)</li>
+                            <li>May conduct field verification for home births</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Receive Certificate</h3>
+                        <p>Delivery timeline:</p>
+                        <ul>
+                            <li><strong>Normal cases:</strong> 7-15 working days</li>
+                            <li><strong>Delayed registration:</strong> May take 30-45 days</li>
+                            <li>Collect from office or receive by post (as per application)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guide">
+            <h2><i class="fas fa-video"></i> Official Tutorial Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0cEQC3drKBA" title="Birth Certificate Application Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="video-caption">Birth certificate registration process by Government of India</p>
+        </section>
+
+        <section class="important-notes">
+            <h2><i class="fas fa-exclamation-circle"></i> Important Information</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3><i class="fas fa-clock"></i> Time Limits</h3>
+                    <p>Within 21 days: Normal process<br>
+                    21 days - 1 year: Requires affidavit<br>
+                    After 1 year: Court order needed</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-rupee-sign"></i> Fees</h3>
+                    <p>₹20-50 for timely registration<br>
+                    ₹50-500 for delayed cases<br>
+                    Varies by state government</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-edit"></i> Corrections</h3>
+                    <p>Submit application with supporting documents. May require affidavit for major changes.</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-phone-alt"></i> Helpline</h3>
+                    <p>National Helpdesk: <strong>1800-180-1102</strong><br>
+                    Email: <a href="mailto:support@crsorgi.gov.in">support@crsorgi.gov.in</a><br>
+                    Contact local municipal office</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I apply for a birth certificate if born at home?</h3>
+                <p>Yes, with an affidavit from parents and verification by local authorities. Two witnesses are required for home births.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if I lost my original birth certificate?</h3>
+                <p>You can obtain a duplicate copy by applying at the original registration office with proper identification and paying the required fees.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is birth certificate mandatory for school admission?</h3>
+                <p>Yes, it's mandatory for admission to schools under the RTE Act and for obtaining other documents like passport later in life.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="doc-footer">
+        <div class="container">
+            <p>For state-specific information, visit your <a href="https://crsorgi.gov.in/" target="_blank">state municipal corporation website</a></p>
+            <p class="disclaimer">This information is provided for guidance only. DocAssist is not affiliated with any government body.</p>
+        </div>
+    </footer>
+</body>
+</html>

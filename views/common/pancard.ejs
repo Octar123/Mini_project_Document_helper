@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Application Process | DocAssist</title>
+    <link rel="stylesheet" href="/stylesheets/aadhar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <div class="container">
+            <h1>PAN Card Documentation</h1>
+            <p>Permanent Account Number by the Income Tax Department</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="doc-overview">
+            <div class="card">
+                <img src="/images/<%= data.image_data %>" alt="Aadhaar Logo" class="doc-logo">
+                <div class="doc-meta">
+                    <p><strong>Issuing Authority:</strong> Income Tax Department, Government of India</p>
+                    <p><strong>Purpose:</strong> Identification for tax and financial transactions</p>
+                    <p><strong>Validity:</strong> Lifetime</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-process">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Application Process</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Application Method</h3>
+                        <p>Apply through either:</p>
+                        <ul>
+                            <li><strong>Online:</strong> Via NSDL (<a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">www.tin-nsdl.com</a>) or UTIITSL (<a href="https://www.pan.utiitsl.com/PAN/" target="_blank">www.pan.utiitsl.com</a>)</li>
+                            <li><strong>Offline:</strong> Through PAN service centers or authorized agents</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Fill Application Form</h3>
+                        <p>Complete Form 49A (for Indian citizens) or Form 49AA (for foreigners):</p>
+                        <ul>
+                            <li>Provide personal details (name, DOB, address)</li>
+                            <li>Select document proofs for identity, address, and DOB</li>
+                            <li>Mention source of income (if applicable)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Submit Documents</h3>
+                        <p>Attach scanned copies (for online) or photocopies (for offline) of:</p>
+                        <ul>
+                            <li><strong>Proof of Identity:</strong> Aadhaar, Passport, Voter ID, Driving License</li>
+                            <li><strong>Proof of Address:</strong> Aadhaar, Utility bills, Bank statement</li>
+                            <li><strong>Proof of Date of Birth:</strong> Birth certificate, School leaving certificate</li>
+                            <li><strong>Passport-size photograph</strong> (for offline applications)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Payment of Fees</h3>
+                        <p>Pay the application fee (excluding GST):</p>
+                        <ul>
+                            <li>₹93 (Indian communication address)</li>
+                            <li>₹864 (Foreign communication address)</li>
+                            <li>Payment methods: Credit/Debit card, Net Banking, Demand Draft</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Verification Process</h3>
+                        <p>For online applications:</p>
+                        <ul>
+                            <li>e-KYC through Aadhaar OTP (instant e-PAN)</li>
+                            <li>Or submit physical documents at nearest PAN center within 15 days</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Receive PAN Card</h3>
+                        <p>Delivery timeline:</p>
+                        <ul>
+                            <li><strong>e-PAN:</strong> Instant for Aadhaar-based applications</li>
+                            <li><strong>Physical card:</strong> 15-20 working days via India Post</li>
+                            <li>Track status using acknowledgment number</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-guide">
+            <h2><i class="fas fa-video"></i> PAN Card Application Tutorial</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p1elAk8tD8k" title="How to Apply for PAN Card Online" frameborder="0" allowfullscreen></iframe>            </div>
+            <p class="video-caption">How to apply for a PAN card online - step-by-step video guide</p>
+        </section>
+
+        <section class="important-notes">
+            <h2><i class="fas fa-exclamation-circle"></i> Important Information</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3><i class="fas fa-rupee-sign"></i> Application Fee</h3>
+                    <p>₹93 + GST for applicants with an Indian address, ₹864 + GST for foreign address.</p>                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-users"></i> For Minors</h3>
+                    <p>PAN can be issued for minors using guardian's documents. Update required after 18 years of age.</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-sync-alt"></i> Corrections/Updates</h3>
+                    <p>PAN correction/update requests can be made online with supporting documents. Fee: ₹96 (approx).</p>
+                </div>
+                <div class="note-card">
+                    <h3><i class="fas fa-phone-alt"></i> Helpline</h3>
+                    <p>NSDL Helpdesk: <strong>020-27218080</strong><br>
+                    UTIITSL Helpdesk: <strong>1800 22 0306</strong><br>
+                    Email: <a href="mailto:tininfo@nsdl.co.in">tininfo@nsdl.co.in</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I apply for PAN card without Aadhaar?</h3>
+                <p>Yes, but Aadhaar-based applications are processed faster. Other valid documents can be used as alternatives.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the difference between PAN and TAN?</h3>
+                <p>PAN is for individuals/entities, while TAN (Tax Deduction Account Number) is required for entities that deduct tax at source.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long is PAN card valid?</h3>
+                <p>PAN card has lifetime validity and doesn't require renewal.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="doc-footer">
+        <div class="container">
+            <p>For latest updates, always refer to the official <a href="https://www.incometax.gov.in/" target="_blank">Income Tax Portal</a></p>
+            <p class="disclaimer">This information is provided for guidance only. DocAssist is not affiliated with the Income Tax Department.</p>
+        </div>
+    </footer>
+</body>
+</html>
