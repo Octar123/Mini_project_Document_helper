@@ -6,11 +6,10 @@ A web-based application that helps users manage, organize, and retrieve importan
 
 ## 🚀 Features
 
-- Upload and manage personal or official documents
-- Categorize and tag documents for easy retrieval
+- Easy Access to important documents
+- Categorized and well-structured access
 - Search and filter functionality
 - Responsive UI for both desktop and mobile
-- Secure document storage using MongoDB
 
 ---
 
@@ -36,7 +35,7 @@ A web-based application that helps users manage, organize, and retrieve importan
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/document-helper.git
+git clone https://github.com/Octar123/Mini_project_Document_helper.git
 cd document-helper
 
 ```
