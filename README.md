@@ -30,13 +30,6 @@ A web-based application that helps users manage, organize, and retrieve importan
 
 ---
 
-## 📷 Screenshots
-
-<!-- Add your screenshots or GIFs here -->
-![Homepage Screenshot](./screenshots/homepage.png)
-![Upload Page Screenshot](./screenshots/upload.png)
-
----
 
 ## 📦 Installation
 
@@ -45,3 +38,44 @@ A web-based application that helps users manage, organize, and retrieve importan
 ```bash
 git clone https://github.com/your-username/document-helper.git
 cd document-helper
+
+```
+
+2. **Install Dependencies**
+
+```bash
+npm install
+```
+
+3.**Set Up Environment Variables**
+```ini
+PORT=3000
+MONGODB_URI=your_mongo_db_connection_string
+```
+
+4.**Run the Server**
+```bash
+npm start
+```
+
+## 📁 Project Structure
+
+```bash
+document-helper/
+├── data/
+│   ├── admin.js
+│   └── connect.js
+│   └── image.js
+│   └── service.js
+│   └── user.js
+├── public/
+│   └── images/
+│   └── stylesheets/
+├── utils/
+│   └── multer-config.js
+├── views/
+├── index.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
